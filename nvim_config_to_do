@@ -1,8 +1,8 @@
 1. Vertical line that gives a suggested length for how long a line should be (includes space for comments)
-2. Color scheme
-3. Code Completion
-4. Understand find and replace using regex
-5. Create keybinding that improve efficiency of switching modes while still avoiding macro abiguity
+2. Create keybinding that improve efficiency of switching modes while still avoiding macro abiguity
+3. Color scheme
+4. Code Completion
+5. Understand find and replace using regex
 6. Learn about and possibly update keybindings for switching to different files
 7. Learn about and possibly update keybindings for opening and closing files and moving open files around
 8. Learn about and possibly update keybindings for opening vim and creating a saving a brand new file to a directory
@@ -10,3 +10,4 @@
 10. Vim macros outside of vim
 11. Github integration
 12. Cool wallpaper
+13. Set up git credentials to make git interactions easier
