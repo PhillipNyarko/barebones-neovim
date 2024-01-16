@@ -1,0 +1,3 @@
+require("pythonic")
+print("hello")
+
