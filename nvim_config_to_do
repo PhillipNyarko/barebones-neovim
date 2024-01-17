@@ -1,9 +1,9 @@
-1. Vertical line that gives a suggested length for how long a line should be (includes space for comments)
 2. Create keybinding that improve efficiency of switching modes while still avoiding macro abiguity
 3. Color scheme
 4. Code Completion
 5. Understand find and replace using regex
 6. Learn about and possibly update keybindings for switching to different files
+(harpoon maybe?)
 7. Learn about and possibly update keybindings for opening and closing files and moving open files around
 8. Learn about and possibly update keybindings for opening vim and creating a saving a brand new file to a directory
 9. Ability to open a terminal with vim files open and run code from terminal without closing vim files. (pressing run autosaves)
@@ -11,3 +11,9 @@
 11. Github integration
 12. Cool wallpaper
 13. Set up git credentials to make git interactions easier
+14. Stop vim from letting lines flow over to the next line in smaller screen
+sizes (let scroll)
+15. Change the color of the cursor
+16. Install packer
+17. Install vertcolumn.nvim
+18. get universal copy and paste working

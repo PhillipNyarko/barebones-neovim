@@ -1,9 +1,16 @@
+-- Set preferred vim options 
+
 vim.opt.tabstop = 4 -- set tab spacing to 4
 vim.opt.cursorline = true -- underline the current line
+vim.opt.mouse = "" -- disable right-click mouse menu 
+
 vim.opt.number = true -- turn line numbers on
 vim.opt.relativenumber = true -- turn relative line numbers on
-vim.opt.smartindent = true -- auto-adjust indentation based on syntax
 
-                                       
-								
-					   
+vim.opt.smartindent = true -- auto-adjust indentation based on syntax
+vim.opt.textwidth = 80 -- set the suggested line length for vertical line length marker
+vim.opt.wrap = false
+
+vim.opt.scrolloff = 8 -- set vertical scroll offset to 8 lines
+
+
