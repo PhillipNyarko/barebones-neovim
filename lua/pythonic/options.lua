@@ -13,4 +13,5 @@ vim.opt.wrap = false
 
 vim.opt.scrolloff = 8 -- set vertical scroll offset to 8 lines
 
-
+vim.opt.undofile = true -- allow for undo even after exiting vim
+-- vim.opt.signcolumn = "yes" -- constantly show the sign column
