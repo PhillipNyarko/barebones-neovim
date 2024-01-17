@@ -1,3 +1,4 @@
-require("pythonic")
+require "pythonic"
+
 print("hello")
 
