@@ -9,7 +9,7 @@ vim.opt.relativenumber = true -- turn relative line numbers on
 
 vim.opt.smartindent = true -- auto-adjust indentation based on syntax
 vim.opt.textwidth = 80 -- set the suggested line length for vertical line length marker
-vim.opt.wrap = false
+vim.opt.wrap = false -- let text flow over horizontally
 
 vim.opt.scrolloff = 8 -- set vertical scroll offset to 8 lines
 
