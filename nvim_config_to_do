@@ -1,6 +1,5 @@
 3. Color scheme
 4. Code Completion
-5. Understand find and replace using regex
 13. Set up git credentials to make git interactions easier
 14. Stop vim from letting lines flow over to the next line in smaller screen
 sizes (let scroll)
