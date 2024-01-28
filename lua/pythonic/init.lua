@@ -3,6 +3,6 @@ for it to be visible upon neovim's startup (asides from the "init.lua" file) --]
 
 require "pythonic.remaps"
 require "pythonic.options"
-require "pythonic.packer"
+require "pythonic.plugins"
 
 print("hello from pythonic")

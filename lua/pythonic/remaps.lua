@@ -1,4 +1,4 @@
--- from LunarVim / Neovim-from-scratch
+-- from LunarVim/Neovim-from-scratch
 -- Note "<CR>" stands for carriage return and is a command that presses enter
 
 local opts = { noremap = true, silent = true }
