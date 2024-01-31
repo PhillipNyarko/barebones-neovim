@@ -83,6 +83,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/phillip/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["virt-column.nvim"] = {
+    loaded = true,
+    path = "/home/phillip/.local/share/nvim/site/pack/packer/start/virt-column.nvim",
+    url = "https://github.com/lukas-reineke/virt-column.nvim"
   }
 }
 
