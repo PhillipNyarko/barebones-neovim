@@ -1,4 +1,1 @@
 require "pythonic"
-
-print("hello")
-

@@ -4,6 +4,5 @@
 14. Stop vim from letting lines flow over to the next line in smaller screen
 sizes (let scroll)
 15. Change the opacity of the cursor
-16. Install packer
 17. Install vertcolumn.nvim
-18. get universal copy and paste working
+18. get universal copy and paste working (go to ranking ides video and look at what prime says at the end)
