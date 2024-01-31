@@ -1,8 +1,5 @@
 3. Color scheme
 4. Code Completion
 13. Set up git credentials to make git interactions easier
-14. Stop vim from letting lines flow over to the next line in smaller screen
-sizes (let scroll)
 15. Change the opacity of the cursor
-17. Install vertcolumn.nvim
 18. get universal copy and paste working (go to ranking ides video and look at what prime says at the end)
