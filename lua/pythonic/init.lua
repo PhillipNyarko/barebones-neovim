@@ -7,5 +7,5 @@ require("virt-column").setup({ -- set up vert column plugin
 		virtcolumn = "120",
 		char = "│",
 })
-vim.cmd "colorscheme tokyonight"
+vim.cmd "colorscheme tokyonight-night"
 
