@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/phillip/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/home/phillip/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
+  },
   ["virt-column.nvim"] = {
     loaded = true,
     path = "/home/phillip/.local/share/nvim/site/pack/packer/start/virt-column.nvim",

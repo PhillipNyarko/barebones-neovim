@@ -42,7 +42,8 @@ packer.init({
 return packer.startup(function(use)
 		use { "wbthomason/packer.nvim", commit = "6afb67460283f0e990d35d229fd38fdc04063e0a" } -- Have packer manage itself
 		use { "nvim-lua/plenary.nvim", commit = "4b7e52044bbb84242158d977a50c4cbcd85070c7" } -- Useful lua functions used by lots of plugins
-		use { "lukas-reineke/virt-column.nvim" }
+		use { "lukas-reineke/virt-column.nvim" } -- adds vertical line length marker
+		use { "folke/tokyonight.nvim"} -- colorscheme
 end)
 
 
