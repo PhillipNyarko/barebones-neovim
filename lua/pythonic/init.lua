@@ -4,6 +4,9 @@ for it to be visible upon neovim's startup (asides from the "init.lua" file) --]
 require "pythonic.remaps"
 require "pythonic.options"
 require "pythonic.plugins"
+require "pythonic.cmp"
+require "pythonic.toggleterm"
+require "pythonic.autopairs"
 
 require("virt-column").setup({ -- set up vert column plugin
 		virtcolumn = "120",
@@ -28,3 +31,5 @@ require("tokyonight").setup({
 })
 
 vim.cmd "colorscheme tokyonight-night"
+
+

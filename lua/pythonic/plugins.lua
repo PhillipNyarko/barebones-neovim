@@ -40,10 +40,24 @@ packer.init({
 
 -- Install plugins here 
 return packer.startup(function(use)
-		use { "wbthomason/packer.nvim", commit = "6afb67460283f0e990d35d229fd38fdc04063e0a" } -- Have packer manage itself
-		use { "nvim-lua/plenary.nvim", commit = "4b7e52044bbb84242158d977a50c4cbcd85070c7" } -- Useful lua functions used by lots of plugins
-		use { "lukas-reineke/virt-column.nvim" } -- adds vertical line length marker
-		use { "folke/tokyonight.nvim"} -- colorscheme
-end)
+				-- main plugins
+				use { "wbthomason/packer.nvim", commit = "6afb67460283f0e990d35d229fd38fdc04063e0a" } -- Have packer manage itself
+				use { "nvim-lua/plenary.nvim", commit = "4b7e52044bbb84242158d977a50c4cbcd85070c7" } -- Useful lua functions used by lots of plugins
+				use "lukas-reineke/virt-column.nvim" -- adds vertical line length marker
+				use "folke/tokyonight.nvim" -- colorscheme
+				use "akinsho/toggleterm.nvim" -- opens terminal in nvim
+				use "windwp/nvim-autopairs" -- auto closes parentheses and quotes
+				use "uga-rosa/cmp-dictionary" -- auto completion for plain english
 
+				-- cmp auto-completion plugins
+				use "hrsh7th/nvim-cmp"
+				use "hrsh7th/cmp-buffer"
+				use "hrsh7th/cmp-path"
+				use "hrsh7th/cmp-cmdline"
+				use "hrsh7th/cmp-nvim-lua"
+
+				-- snippet plugins
+				use "L3MON4D3/LuaSnip"
+				use "rafamadriz/friendly-snippets"
+end)
 
