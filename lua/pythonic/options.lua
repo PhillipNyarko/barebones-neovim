@@ -1,6 +1,6 @@
 -- Set preferred vim options 
 
-vim.opt.tabstop = 4 -- set tab spacing to 4
+vim.opt.tabstop = 2 -- set tab spacing to 4
 vim.opt.cursorline = true -- underline the current line
 vim.opt.mouse = "" -- disable right-click mouse menu 
 
