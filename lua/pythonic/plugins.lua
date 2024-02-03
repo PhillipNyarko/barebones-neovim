@@ -47,17 +47,21 @@ return packer.startup(function(use)
 				use "folke/tokyonight.nvim" -- colorscheme
 				use "akinsho/toggleterm.nvim" -- opens terminal in nvim
 				use "windwp/nvim-autopairs" -- auto closes parentheses and quotes
-				use "uga-rosa/cmp-dictionary" -- auto completion for plain english
-
+				
 				-- cmp auto-completion plugins
 				use "hrsh7th/nvim-cmp"
 				use "hrsh7th/cmp-buffer"
 				use "hrsh7th/cmp-path"
 				use "hrsh7th/cmp-cmdline"
-				use "hrsh7th/cmp-nvim-lua"
+				use "saadparwaiz1/cmp_luasnip"
+				use "uga-rosa/cmp-dictionary" -- auto completion for plain english
 
+				
 				-- snippet plugins
 				use "L3MON4D3/LuaSnip"
 				use "rafamadriz/friendly-snippets"
+				
+				
+				-- Lsp plugins
 end)
 
