@@ -2,22 +2,10 @@ local cmp_status_ok, cmp = pcall(require, "cmp")
 if not cmp_status_ok then
   return
 end
-
 local snip_status_ok, luasnip = pcall(require, "luasnip")
 if not snip_status_ok then
   return
 end
-
-local dict_status_ok, cmp_dictionary = pcall(require, "cmp_dictionary")
-if not dict_status_ok then
-  return
-end
-
-require("cmp_dictionary").setup({
-  sources = {
-    { name = 'dictionary', keyword_length = 2 }
-  },
-})
 
 require("luasnip/loaders/from_vscode").lazy_load()
 
@@ -111,19 +99,17 @@ cmp.setup {
       vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
       -- vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
       vim_item.menu = ({
-				buffer = "[Buffer]",
         luasnip = "[Snippet]",
-        dictionary = "[Dict]",
+				buffer = "[Buffer]",
         path = "[Path]"
       })[entry.source.name]
       return vim_item
     end,
   },
   sources = {
-    { name = "buffer" },
-		{ name = "luasnip" },
-		{ name = "dictionary" },
-		{ name = "path" }
+				{ name = "luasnip" },
+				{ name = "buffer" },
+				{ name = "path" }
   },
   confirm_opts = {
     behavior = cmp.ConfirmBehavior.Replace,

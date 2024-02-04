@@ -49,12 +49,12 @@ return packer.startup(function(use)
 				use "windwp/nvim-autopairs" -- auto closes parentheses and quotes
 				
 				-- cmp auto-completion plugins
-				use "hrsh7th/nvim-cmp"
-				use "hrsh7th/cmp-buffer"
-				use "hrsh7th/cmp-path"
-				use "hrsh7th/cmp-cmdline"
+				use "hrsh7th/nvim-cmp"-- main completion plugin for neovim
+
 				use "saadparwaiz1/cmp_luasnip"
+				use "hrsh7th/cmp-buffer"
 				use "uga-rosa/cmp-dictionary" -- auto completion for plain english
+				use "hrsh7th/cmp-path"
 
 				
 				-- snippet plugins

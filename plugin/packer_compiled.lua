@@ -84,11 +84,6 @@ _G.packer_plugins = {
     path = "/home/phillip/.local/share/nvim/site/pack/packer/start/cmp-buffer",
     url = "https://github.com/hrsh7th/cmp-buffer"
   },
-  ["cmp-cmdline"] = {
-    loaded = true,
-    path = "/home/phillip/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
-    url = "https://github.com/hrsh7th/cmp-cmdline"
-  },
   ["cmp-dictionary"] = {
     loaded = true,
     path = "/home/phillip/.local/share/nvim/site/pack/packer/start/cmp-dictionary",
