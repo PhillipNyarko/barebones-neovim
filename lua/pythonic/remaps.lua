@@ -12,7 +12,6 @@ local keymap = vim.keymap.set
 keymap("", "<Space>", "<Nop>", optsearch)
 
 vim.g.mapleader = " "
-vim.g.maplocalleader = " "
 
 -- Modes
 --   normal_mode = "n",
@@ -41,7 +40,7 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 --Buffers--
 
--- open new buffers ("t" for "tab")
+-- open net-rw and select another buffer to open on the right side of the currently open file ("t" for "tab")
 keymap("n", "<Leader>t", ":vsplit<CR> :Ex<CR> :wincmd R<CR>", opts)
 
 -- Navigate buffers
@@ -52,6 +51,8 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<A-j>", ":m .+1<CR>==", opts)
 keymap("n", "<A-k>", ":m .-2<CR>==", opts)
 
+keymap("n", "<C-z>", ":wq<CR>", opts) -- set control z to ":wq"
+
 -- Insert --
 -- Press jk fast to exit insert mode 
 keymap("i", "jk", "<ESC>", opts)
@@ -61,10 +62,14 @@ keymap("i", "jk", "<ESC>", opts)
 keymap("v", "<", "<gv^", opts)
 keymap("v", ">", ">gv^", opts)
 
--- Move text up and down in visual mode
+-- Move text up and down in visual mode (works with alt and shift)
 keymap("v", "<A-j>", ":m '>+1<CR>gv=gv", opts)
 keymap("v", "<A-k>", ":m '<-2<CR>gv=gv", opts)
 keymap("v", "p", '"_dP', opts)
+
+vim.api.nvim_set_option('clipboard', 'unnamedplus')
+keymap("v", "y", '"+y<CR>', opts) --  yank copies to the system clipboard
+
 
 -- Visual Block --
 -- Move text up and down
@@ -73,5 +78,4 @@ keymap("x", "K", ":m '<-2<CR>gv=gv", opts)
 keymap("x", "<A-j>", ":m '>+1<CR>gv=gv", opts)
 keymap("x", "<A-k>", ":m '<-2<CR>gv=gv", opts)
 
-keymap("n", "<C-z>", ":wq<CR>", opts) -- set control z to ":wq"
 
