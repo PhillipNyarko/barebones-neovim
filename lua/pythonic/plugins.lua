@@ -49,12 +49,14 @@ return packer.startup(function(use)
 				use "windwp/nvim-autopairs" -- auto closes parentheses and quotes
 				
 				-- cmp auto-completion plugins
-				use "hrsh7th/nvim-cmp"-- main completion plugin for neovim
+				use "hrsh7th/nvim-cmp"-- completion plugin for neovim
 
 				use "saadparwaiz1/cmp_luasnip"
 				use "hrsh7th/cmp-buffer"
 				use "uga-rosa/cmp-dictionary" -- auto completion for plain english
 				use "hrsh7th/cmp-path"
+
+				use "hrsh7th/cmp-nvim-lsp" -- lsp source 
 
 				
 				-- snippet plugins
@@ -63,5 +65,8 @@ return packer.startup(function(use)
 				
 				
 				-- Lsp plugins
+				use { "neovim/nvim-lspconfig", commit = "f11fdff7e8b5b415e5ef1837bdcdd37ea6764dda" } -- enable LSP
+				use "williamboman/nvim-lsp-installer" -- LSP installer
+
 end)
 

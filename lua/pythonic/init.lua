@@ -7,29 +7,6 @@ require "pythonic.plugins"
 require "pythonic.cmp"
 require "pythonic.toggleterm"
 require "pythonic.autopairs"
-
-require("virt-column").setup({ -- set up vert column plugin
-		virtcolumn = "120",
-		char = "│",
-})
-
--- configure the tokyonight theme
-require("tokyonight").setup({
-    style = "night",
-    transparent = true,
-    
-    styles = {
-        sidebars = "transparent",
-        floats = "transparent",
-    },
-    
-    config = function(_, opts)
-        local tokyonight = require "tokyonight"
-        tokyonight.setup(opts)
-        tokyonight.load()
-    end,
-})
-
-vim.cmd "colorscheme tokyonight-night" -- set colorscheme to tokyonight-night on startup
-
-
+require "pythonic.tokyonight"
+require "pythonic.virt_column"
+--require "pythonic.lsp"
