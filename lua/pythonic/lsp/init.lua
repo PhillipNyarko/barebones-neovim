@@ -1,1 +1,2 @@
-require "pythonic.lsp.lsp_config"
+require "pythonic.lsp.mason"
+
