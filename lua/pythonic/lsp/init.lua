@@ -1,2 +1,1 @@
-require "pythonic.lsp.mason"
 
