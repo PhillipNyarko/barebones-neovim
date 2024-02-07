@@ -29,7 +29,7 @@ keymap("n", "<C-Right>", ":vertical resize -2<CR>")
 --Buffers--
 
 -- open net-rw and select for buffer selection for vertical split screen
-keymap("n", "<Leader>t", ":vsplit<CR> :Ex<CR>")
+keymap("n", "<leader>t", ":vsplit<CR> :Ex<CR>")
 --make it open non netrw
 
 -- Navigate buffers
