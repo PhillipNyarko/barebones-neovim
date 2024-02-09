@@ -9,14 +9,14 @@ return {
       "java-language-server",
       "pylint",
       "rust-analyzer",
-      "shfmt"
+      "shfmt",
     },
 
     ui = {
       icons = {
         package_installed = "✓",
         package_pending = "➜",
-        package_uninstalled = "✗"
+        package_uninstalled = "✗",
       },
     },
   },
