@@ -28,9 +28,11 @@ keymap("n", "<C-Right>", ":vertical resize -2<CR>")
 
 --Buffers--
 
+-- open net-rw
+keymap("n", "<leader>e", ":Lex 30<CR>")
+
 -- open net-rw and select for buffer selection for vertical split screen
-keymap("n", "<leader>t", ":vsplit<CR> :Ex<CR>")
---make it open non netrw
+keymap("n", "<leader>t", ":vsplit<CR> :Ex <CR>")
 
 -- Navigate buffers
 keymap("n", "<C-l>", ":bnext<CR>")
@@ -46,12 +48,14 @@ keymap("n", "<C-z>", "") -- unmap ctrl z
 -- press jk fast to exit insert mode
 keymap("i", "jk", "<cmd>noh<cr><esc>") -- remap  <esc> to "jk" for insert mode (also removes any highlighting)
 
--- Visual --
--- Stay in indent mode
+-- visual --
+-- stay in indent mode
 keymap("v", "<", "<gv^")
 keymap("v", ">", ">gv^")
 
--- Move text up and down in visual mode (works with alt and shift)
+keymap("n", "Y", "y$") -- yank to the end of line in normal mode
+keymap("v", "Y", "y$") -- yank to the end of line in visual mode
+
 keymap("v", "<A-j>", ":m '>+1<CR>gv=gv")
 keymap("v", "<A-k>", ":m '<-2<CR>gv=gv")
 keymap("v", "p", '"_dP')
