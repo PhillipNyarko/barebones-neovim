@@ -15,6 +15,7 @@ end
 --   term_mode = "t",
 --   command_mode = "c",
 
+
 -----------------------------------------------
 --Motions
 -----------------------------------------------
@@ -39,7 +40,7 @@ map("n", "<A-j>", ":m .+1<CR>==")
 map("n", "<A-k>", ":m .-2<CR>==")
 
 -- yank/delete from cursor to end of line
-map("n", "y", "y$") 
+map("n", "<leader>y", "y$") 
 map("n", "<leader>dd", "D") 
 
 
@@ -58,7 +59,7 @@ map("v", "p", '"_dP')
 -- Visual Block Mode ---------------------------
 
 -- yank to the end of line in visual mode
-map("x", "y", "$y") 
+map("x", "<leader>y", "$y") 
 
 -- Move text up and down
 map("x", "J", ":m '>+1<CR>gv=gv")
@@ -71,14 +72,11 @@ map("x", "<A-k>", ":m '<-2<CR>gv=gv")
 --Saving
 -----------------------------------------------
 
--- Faster writing to file with <leader> s
+-- Write to the file and call source with <leader> s
 map("n", "<leader>s", ":w<CR> :so<CR>")
 
 -- Save and close the current file with <leader> ww
 map("n", "<leader>ss", ":wq<CR>")
-
--- Faster sourcing with <leader> so
-map("n", "<leader>so", ":so<CR>")
 
 
 -----------------------------------------------
@@ -123,7 +121,7 @@ map("n", "<leader>c", ":nohl<CR>")
 -----------------------------------------------------------
 
 --- open nvim tree on the left for file switch
-map("n", "<leader>e", ":Lex<CR>")
+map("n", "<leader>e", "")
 
 --open a buffer selection pane on the right (opens selected buffer in vertical split on the right)
 map("n", "<leader>t", "")
@@ -133,8 +131,7 @@ map("n", "<leader>t", "")
 -----------------------------------------------------------
 
 -- Terminal mappings
-map("n", "<C-t>", ":Term<CR>", { noremap = true })  -- open
-map("t", "<Esc>", "<C-\\><C-n>")                    -- exit
+map("n", "<leader>t", ":ToggleTerm<CR>", { noremap = true })  -- open
 
 
 -----------------------------------------------------------

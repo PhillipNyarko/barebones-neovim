@@ -1,1 +1,0 @@
-require "pythonic.plugins.lsp"

@@ -1,4 +1,4 @@
-------------------------------------------------------
+-----------------------------------------------------
 -- Set NeoOptions
 ------------------------------------------------------
 
@@ -20,4 +20,19 @@ opt.number = true -- turn on line numbers
 
 opt.relativenumber = true -- turn on relative line numbers
 
-vim.cmd('colorscheme slate') -- set default colorscheme
+opt.termguicolors = true -- optionally enable 24-bit colour
+
+-- diable net-rw
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- briefly highlight selection when yanking
+vim.api.nvim_create_autocmd("TextYankPost", { 
+  group = vim.api.nvim_create_augroup("highlight_yank", {}),
+  desc = "Hightlight selection on yank",
+  pattern = "*",
+  callback = function()
+    vim.highlight.on_yank { higroup = "Visual", timeout = 100 }
+  end,
+})
+
