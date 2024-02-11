@@ -83,6 +83,12 @@ map("n", "<leader>ss", ":wq<CR>")
 --Window Management
 -----------------------------------------------
 
+--open net-rw to switch buffer 
+map("n", "<leader>e", ":Lex 30<CR>")
+
+-- open net-rw to select new buffer for vertical split
+map("n", "<leader>t", ":vsplit<CR> :Ex<CR> :wincmd R<CR>")
+
 -- Close current window 
 map("n", "<leader>q", ":q<CR>")
 
@@ -117,22 +123,11 @@ map("n", "<leader>c", ":nohl<CR>")
 
 
 -----------------------------------------------------------
--- Nvim Tree 
------------------------------------------------------------
-
---- open nvim tree on the left for file switch
-map("n", "<leader>e", "")
-
---open a buffer selection pane on the right (opens selected buffer in vertical split on the right)
-map("n", "<leader>t", "")
-
------------------------------------------------------------
 -- Terminal 
 -----------------------------------------------------------
 
--- Terminal mappings
-map("n", "<leader>t", ":ToggleTerm<CR>", { noremap = true })  -- open
-
+-- open terminal
+map("n", "<leader>tm", ":ToggleTerm<CR>")  
 
 -----------------------------------------------------------
 -- Disabled
