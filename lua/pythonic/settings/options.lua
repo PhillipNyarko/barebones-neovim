@@ -1,10 +1,8 @@
------------------------------------------------------
--- Set NeoOptions
-------------------------------------------------------
-
 local opt = vim.opt
 
 opt.mouse = "" -- disable right-click mouse menu
+
+opt.tabstop = 2 -- set tab spacing to 2
 
 opt.clipboard = "unnamedplus" -- copy to system clipboard
 
@@ -16,11 +14,17 @@ opt.termguicolors = true -- allows for more default color schemes
 
 opt.cursorline = true -- Enable cursor line highlighting
 
+opt.smartindent = true -- auto-adjust indentation based on syntax
+
+opt.wrap = false -- let text flow over horizontally
+
 opt.number = true -- turn on line numbers
 
 opt.relativenumber = true -- turn on relative line numbers
 
 opt.termguicolors = true -- optionally enable 24-bit colour
+
+opt.undofile = true -- allow for undo even after exiting vim
 
 -- diable net-rw
 vim.g.loaded_netrw = 1

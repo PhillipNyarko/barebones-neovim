@@ -22,14 +22,5 @@ if not status_ok then
   return
 end
 
--- Start setup
-lazy.setup({
-	spec = {
-		{ 
-			import = "pythonic.plugins"
-		},
-		{ 
-			import = "pythonic.plugins.lsp"
-		}
-	}
-})
+-- Start setup, look in the plugins directory for plugins to set up
+lazy.setup({spec = { { import = "pythonic.plugins" }, { import = "pythonic.plugins.lsp"}}})
