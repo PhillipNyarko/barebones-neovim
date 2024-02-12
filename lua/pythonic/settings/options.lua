@@ -3,9 +3,9 @@ local g = vim.g
 
 opt.mouse = "" -- disable right-click mouse menu
 
-opt.tabstop = 4 -- set tab # to 4
-
-opt.shiftwidth = 4 -- set shift width to 2 spaces
+opt.tabstop = 4 -- 1 <tab> = 4 spaces
+    
+opt.shiftwidth =  4 -- 1 indentation = 4 spaces
 
 opt.clipboard = "unnamedplus" -- copy to system clipboard
 

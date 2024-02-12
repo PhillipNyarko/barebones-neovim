@@ -1,23 +1,35 @@
 return {
-  "williamboman/mason.nvim",
+	"williamboman/mason.nvim",
+	dependencies = {
+		"williamboman/mason-lspconfig.nvim"
+	},
+	config = function()
 
-  opts = {
-    ensure_installed = { -- the following packages will be auto installed
-      "pyright",
-      "lua-language-server",
-      "json-lsp",
-      "java-language-server",
-      "pylint",
-      "rust-analyzer",
-      "shfmt"
-    },
+		local mason = require("mason")
+		local mason_lspconfig = require("mason-lspconfig")
 
-    ui = {
-      icons = {
-        package_installed = "✓",
-        package_pending = "➜",
-        package_uninstalled = "✗"
-      },
-    },
-  },
+		mason.setup({
+			ui = {
+				icons = {
+					package_installed = "✓",
+					package_pending = "➜",
+					package_uninstalled = "✗"
+				},
+			},
+		})
+
+		mason_lspconfig.setup({
+			ensure_installed = { -- the following packages will be auto installed
+				"pyright",
+				"lua_language_server",
+				"json_lsp",
+				"java_language_server",
+				"pylint",
+				"rust_analyzer",
+				"shfmt"
+			},
+
+			automatic_installation = true
+		})
+	end,
 }
