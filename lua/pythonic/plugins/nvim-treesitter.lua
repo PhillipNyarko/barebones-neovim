@@ -1,19 +1,49 @@
-local status_ok, nvim_treesitter = pcall(require, 'nvim-treesitter.configs')
-if not status_ok then
-  return
-end
+return {
+  {
+    "nvim-treesitter/nvim-treesitter",
+    event = { "BufReadPre", "BufNewFile" },
+    build = ":TSUpdate",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter-textobjects",
+    },
+    config = function()
+      -- import nvim-treesitter plugin
+      local treesitter = require("nvim-treesitter.configs")
 
--- See: https://github.com/nvim-treesitter/nvim-treesitter#quickstart
-nvim_treesitter.setup {
-  -- A list of parser names, or "all"
-  ensure_installed = {
-    'bash', 'c', 'cpp', 'css', 'html', 'javascript', 'json', 'lua', 'python',
-    'rust', 'typescript', 'vim', 'yaml',
-  },
-  -- Install parsers synchronously (only applied to `ensure_installed`)
-  sync_install = false,
-  highlight = {
-    -- `false` will disable the whole extension
-    enable = true,
+      -- configure treesitter
+      treesitter.setup({ -- enable syntax highlighting
+        highlight = {
+          enable = true,
+        },
+        indent = { enable = false },
+
+        -- ensure these language parsers are installed
+        ensure_installed = {
+          "json",
+          "javascript",
+          "html",
+          "css",
+          "markdown",
+          "markdown_inline",
+          "bash",
+          "lua",
+          "vim",
+          "dockerfile",
+          "gitignore",
+	  	  "python",
+	      "rust",
+	      "java"
+        },
+        incremental_selection = {
+          enable = true,
+          keymaps = {
+            init_selection = "<C-space>",
+            node_incremental = "<C-space>",
+            scope_incremental = false,
+            node_decremental = "<bs>",
+          },
+        },
+      })
+    end,
   },
 }

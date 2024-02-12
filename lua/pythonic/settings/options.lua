@@ -4,7 +4,7 @@ local g = vim.g
 opt.mouse = "" -- disable right-click mouse menu
 
 opt.tabstop = 4 -- 1 <tab> = 4 spaces
-    
+
 opt.shiftwidth =  4 -- 1 indentation = 4 spaces
 
 opt.clipboard = "unnamedplus" -- copy to system clipboard
@@ -23,6 +23,8 @@ opt.wrap = false -- let text flow over horizontally
 
 opt.number = true -- turn on line numbers
 
+opt.signcolumn = "yes" -- always show the sign column
+
 opt.relativenumber = true -- turn on relative line numbers
 
 opt.termguicolors = true -- optionally enable 24-bit colour
@@ -37,7 +39,7 @@ g.netrw_banner = 0 -- supress net-rw banner
 
 
 -- briefly highlight selection when yanking
-vim.api.nvim_create_autocmd("TextYankPost", { 
+vim.api.nvim_create_autocmd("TextYankPost", {
   group = vim.api.nvim_create_augroup("highlight_yank", {}),
   desc = "Hightlight selection on yank",
   pattern = "*",
