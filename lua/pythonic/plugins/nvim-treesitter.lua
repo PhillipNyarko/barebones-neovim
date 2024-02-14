@@ -20,19 +20,12 @@ return {
         -- ensure these language parsers are installed
         ensure_installed = {
           "json",
-          "javascript",
-          "html",
-          "css",
-          "markdown",
-          "markdown_inline",
           "bash",
           "lua",
           "vim",
-          "dockerfile",
-          "gitignore",
-	  	  "python",
-	      "rust",
-	      "java"
+		  "python",
+		  "rust",
+		  "java"
         },
         incremental_selection = {
           enable = true,
