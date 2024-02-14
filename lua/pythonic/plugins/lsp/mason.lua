@@ -21,8 +21,6 @@ return {
 		mason_lspconfig.setup({
 			ensure_installed = { -- the following packages will be auto installed
 				"pyright",
-				"rust_analyzer",
-				"java_language_server",
 				"lua_ls",
 				"jsonls",
 				"bashls"
