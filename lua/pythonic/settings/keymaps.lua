@@ -96,10 +96,10 @@ map("n", "<leader>q", ":q<CR>")
 map("n", "<leader>qa", ":qa!<CR>")
 
 -- Move around splits using leader + {h,j,k,l}
-map("n", "<leader>h", "<C-w>h")
-map("n", "<leader>j", "<C-w>j")
-map("n", "<leader>k", "<C-w>k")
-map("n", "<leader>l", "<C-w>l")
+map("n", "<leader>h", "<C-w>h", opts)
+map("n", "<leader>j", "<C-w>j", opts)
+map("n", "<leader>k", "<C-w>k", opts)
+map("n", "<leader>l", "<C-w>l", opts)
 
 -- Resize with ctrl + {h,j,k,l}
 map("n", "<C-h>", ":resize +2<CR>")
@@ -127,7 +127,7 @@ map("n", "<leader>c", ":nohl<CR>")
 -----------------------------------------------------------
 
 -- open terminal
-map("n", "<leader>tm", ":ToggleTerm<CR>")  
+map("n", "<leader>tm", ":w<CR> :ToggleTerm<CR>")  
 
 -----------------------------------------------------------
 -- Disabled
