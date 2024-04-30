@@ -31,8 +31,6 @@ opt.termguicolors = true -- optionally enable 24-bit colour
 
 opt.undofile = true -- allow for undo even after exiting vim
 
-opt.statusline = " " -- turn the line numbern info off in the satus line 
-
 g.netrw_liststyle = 3 -- Set net-rw to default to tree style
 
 g.netrw_banner = 0 -- supress net-rw banner
